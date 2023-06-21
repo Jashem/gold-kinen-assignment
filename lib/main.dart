@@ -1,0 +1,6 @@
+import 'package:assignment/core/view/app_widget.dart';
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const AppWidget());
+}
