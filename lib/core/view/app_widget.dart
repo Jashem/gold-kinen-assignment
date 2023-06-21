@@ -1,3 +1,4 @@
+import 'package:assignment/posts/repositories/post_repository.dart';
 import 'package:assignment/users/blocs/users_bloc/users_bloc.dart';
 import 'package:assignment/users/view/users_page.dart';
 import 'package:dio/dio.dart';
@@ -19,6 +20,11 @@ class AppWidget extends StatelessWidget {
         ),
         RepositoryProvider(
           create: (context) => UserRepository(
+            RepositoryProvider.of<Dio>(context),
+          ),
+        ),
+        RepositoryProvider(
+          create: (context) => PostRepository(
             RepositoryProvider.of<Dio>(context),
           ),
         ),

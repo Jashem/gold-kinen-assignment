@@ -1,2 +1,14 @@
 ###
 GET https://jsonplaceholder.typicode.com/users
+
+###
+GET https://jsonplaceholder.typicode.com/users/1/posts
+
+###
+POST  https://jsonplaceholder.typicode.com/posts
+
+{
+  "title": "foo",
+  "body": "bar",
+  "userId": 1
+}
